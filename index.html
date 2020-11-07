@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #git-button {
+            padding: 10px 12px;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: dodgerblue;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+        <button id="git-button">
+            Say Hello to Git/GitHub
+        </button>
+
+        <a href="https://www.github.com">Say Hello to Git/Github</a>
+
+        <p>End of story</p>
+
+        <script>
+            // We're going to make the button behave like a link
+            const gitButton = document.getElementById("git-button");
+
+            gitButton.addEventListener('click', function () {
+                alert("You clicked me...Silly Baba")
+                window.location.href = "https://www.github.com";
+            })
+        </script>
+</body>
+</html>
